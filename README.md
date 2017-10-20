@@ -1,6 +1,22 @@
 # v-fire
 
 > CRUD with Vue and Firebase
+> Deve ser criado o firebase.js na raiz
+> Ex: 
+
+import { initializeApp } from 'firebase';
+
+const app = initializeApp({
+    apiKey: "xxxx",
+    authDomain: "xxx",
+    databaseURL: "xx",
+    projectId: "xxx",
+    storageBucket: "",
+    messagingSenderId: "xxx"
+});
+
+export const db = app.database();
+export const namesRef = db.ref('names');
 
 ## Build Setup
 
